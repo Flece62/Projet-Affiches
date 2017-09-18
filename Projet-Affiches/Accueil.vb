@@ -6,7 +6,12 @@
         btnConnexion.Text = "Connexion"
         lbPseudoGagnant.Text = "Pseudo du gagnant"
         lbDateMembre.Text = "Date"
+        tbDescription.Text = ""
 
+        MenuPAccueil.Text = "Accueil"
+        MenuPAffiaches.Text = "Les affiches"
+        MenuPAdherents.Text = "Les adhérents"
+        MenuPContact.Text = "Contact"
 
     End Sub
 
