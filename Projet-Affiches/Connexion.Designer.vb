@@ -23,12 +23,18 @@ Partial Class Connexion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Ou = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -41,6 +47,7 @@ Partial Class Connexion
         Me.MenuPAffiaches = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPAdherents = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPContact = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuPMonCompte = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MenuPrincipale.SuspendLayout()
@@ -48,6 +55,11 @@ Partial Class Connexion
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.LinkLabel1)
+        Me.Panel1.Controls.Add(Me.CheckBox1)
+        Me.Panel1.Controls.Add(Me.Ou)
+        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.TextBox2)
@@ -57,6 +69,53 @@ Partial Class Connexion
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(322, 313)
         Me.Panel1.TabIndex = 4
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(183, 183)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(111, 13)
+        Me.LinkLabel1.TabIndex = 13
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Mot de passe oublié ?"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(18, 182)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
+        Me.CheckBox1.TabIndex = 12
+        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Ou
+        '
+        Me.Ou.AutoSize = True
+        Me.Ou.Location = New System.Drawing.Point(142, 251)
+        Me.Ou.Name = "Ou"
+        Me.Ou.Size = New System.Drawing.Size(21, 13)
+        Me.Ou.TabIndex = 11
+        Me.Ou.Text = "Ou"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(17, 276)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(276, 25)
+        Me.Button3.TabIndex = 10
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(18, 212)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(276, 25)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -101,6 +160,7 @@ Partial Class Connexion
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Controls.Add(Me.TextBox5)
         Me.Panel2.Controls.Add(Me.Label6)
@@ -112,6 +172,15 @@ Partial Class Connexion
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(322, 313)
         Me.Panel2.TabIndex = 5
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(25, 276)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(276, 25)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -174,7 +243,7 @@ Partial Class Connexion
         '
         Me.MenuPrincipale.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.MenuPrincipale.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.MenuPrincipale.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuPAccueil, Me.MenuPAffiaches, Me.MenuPAdherents, Me.MenuPContact})
+        Me.MenuPrincipale.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuPAccueil, Me.MenuPAffiaches, Me.MenuPAdherents, Me.MenuPContact, Me.MenuPMonCompte})
         Me.MenuPrincipale.Location = New System.Drawing.Point(0, 0)
         Me.MenuPrincipale.Name = "MenuPrincipale"
         Me.MenuPrincipale.Size = New System.Drawing.Size(690, 27)
@@ -204,6 +273,12 @@ Partial Class Connexion
         Me.MenuPContact.Name = "MenuPContact"
         Me.MenuPContact.Size = New System.Drawing.Size(113, 23)
         Me.MenuPContact.Text = "MenuPContact"
+        '
+        'MenuPMonCompte
+        '
+        Me.MenuPMonCompte.Name = "MenuPMonCompte"
+        Me.MenuPMonCompte.Size = New System.Drawing.Size(143, 23)
+        Me.MenuPMonCompte.Text = "MenuPMonCompte"
         '
         'Connexion
         '
@@ -245,4 +320,11 @@ Partial Class Connexion
     Friend WithEvents MenuPAffiaches As ToolStripMenuItem
     Friend WithEvents MenuPAdherents As ToolStripMenuItem
     Friend WithEvents MenuPContact As ToolStripMenuItem
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Ou As Label
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents MenuPMonCompte As ToolStripMenuItem
 End Class
