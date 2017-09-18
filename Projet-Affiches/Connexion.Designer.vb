@@ -48,6 +48,10 @@ Partial Class Connexion
         Me.MenuPAdherents = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPContact = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPMonCompte = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuPMonProfil = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuPEmprunt = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuPNotes = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuPAffiches2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MenuPrincipale.SuspendLayout()
@@ -276,9 +280,34 @@ Partial Class Connexion
         '
         'MenuPMonCompte
         '
+        Me.MenuPMonCompte.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuPMonProfil, Me.MenuPEmprunt, Me.MenuPNotes, Me.MenuPAffiches2})
         Me.MenuPMonCompte.Name = "MenuPMonCompte"
         Me.MenuPMonCompte.Size = New System.Drawing.Size(143, 23)
         Me.MenuPMonCompte.Text = "MenuPMonCompte"
+        '
+        'MenuPMonProfil
+        '
+        Me.MenuPMonProfil.Name = "MenuPMonProfil"
+        Me.MenuPMonProfil.Size = New System.Drawing.Size(182, 24)
+        Me.MenuPMonProfil.Text = "MenuPMonProfil"
+        '
+        'MenuPEmprunt
+        '
+        Me.MenuPEmprunt.Name = "MenuPEmprunt"
+        Me.MenuPEmprunt.Size = New System.Drawing.Size(182, 24)
+        Me.MenuPEmprunt.Text = "MenuPEmprunt"
+        '
+        'MenuPNotes
+        '
+        Me.MenuPNotes.Name = "MenuPNotes"
+        Me.MenuPNotes.Size = New System.Drawing.Size(182, 24)
+        Me.MenuPNotes.Text = "MenuPNotes"
+        '
+        'MenuPAffiches2
+        '
+        Me.MenuPAffiches2.Name = "MenuPAffiches2"
+        Me.MenuPAffiches2.Size = New System.Drawing.Size(182, 24)
+        Me.MenuPAffiches2.Text = "MenuPAffiches2"
         '
         'Connexion
         '
@@ -327,4 +356,8 @@ Partial Class Connexion
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents MenuPMonCompte As ToolStripMenuItem
+    Friend WithEvents MenuPMonProfil As ToolStripMenuItem
+    Friend WithEvents MenuPEmprunt As ToolStripMenuItem
+    Friend WithEvents MenuPNotes As ToolStripMenuItem
+    Friend WithEvents MenuPAffiches2 As ToolStripMenuItem
 End Class
